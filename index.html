@@ -2,94 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vicente Puig - Desarrollador Web</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      margin: 40px;
-      background: #111;
-      color: #eee;
-      max-width: 900px;
-    }
-
-    h1 { color: #fff; }
-    h2 { margin-top: 40px; }
-
-    .proyecto {
-      border: 1px solid #333;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      background: #1a1a1a;
-    }
-
-    a {
-      color: #6cf;
-      text-decoration: none;
-      margin-right: 15px;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<h1>Vicente Puig</h1>
-<p>Desarrollador Web · FP DAW</p>
+<main>
 
-<h2>Proyectos</h2>
+  <h1>Vicente Puig</h1>
+  <p class="subtitle">Desarrollador Web · FP DAW</p>
 
-<div class="proyecto">
-  <h3>Diseño responsive (CSS Flexbox)</h3>
-  <p>
-    Proyecto de maquetacion responsive con media queries, flexbox y menu adaptable.
-  </p>
-  <a href="https://vicenpuig.github.io/responsive-layout">Ver demo</a>
-  <a href="https://github.com/vicenpuig/responsive-layout">Ver codigo</a>
-</div>
+  <h2>Proyectos</h2>
 
-<div class="proyecto">
-  <h3>Carrito de compra (JavaScript)</h3>
-  <p>
-    Proyecto de practicas centrado en gestion de eventos, delegacion de eventos
-    y calculo dinamico de totales.
-  </p>
-  <a href="https://vicenpuig.github.io/carrito-eventos-JS">Ver demo</a>
-  <a href="https://github.com/vicenpuig/carrito-eventos-JS">Ver codigo</a>
-</div>
-
-<div class="proyecto">
-  <h3>Sistema de sprites (Godot)</h3>
-  <p>
-    Proyecto de practica centrado en animaciones, sprites y control de estados.
-  </p>
-  <p>Videos de muestra:</p>
-  <div style="display:flex; gap:10px; flex-wrap:wrap;">
-    <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion1.mp4" muted autoplay loop controls width="280"></video>
-    <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion2.mp4" muted autoplay loop controls width="280"></video>
-    <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion3.mp4" muted autoplay loop controls width="280"></video>
-    <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion4.mp4" muted autoplay loop controls width="280"></video>
+  <div class="proyecto">
+    <h3>Diseño responsive (CSS Flexbox)</h3>
+    <p>
+      Proyecto de maquetacion responsive con media queries, flexbox y menu adaptable.
+    </p>
+    <a href="https://vicenpuig.github.io/responsive-layout">Ver demo</a>
+    <a href="https://github.com/vicenpuig/responsive-layout">Ver codigo</a>
   </div>
-  <a href="https://github.com/vicenpuig/godot-pruebas-menu-sprites">Ver codigo y mas videos</a>
-</div>
-<div class="proyecto">
-  <h3>Juego completo Android de estilo FlapBird</h3>
-  <p>
-    Proyecto de practica centrado en hacer juego 100% funcional de cara a convertirlo en un .apk para android.
-  </p>
-  <p>Video de muestra:</p>Videos/Gameplay.mp4
-  <div style="display:flex; gap:10px; flex-wrap:wrap;">
-    <video src="https://raw.githubusercontent.com/vicenpuig/celiaticat-godot-flipbird/main/Videos/Gameplay.mp4" muted autoplay loop controls width="280"></video>
-  </div>
-  <a href="https://github.com/vicenpuig/celiaticat-godot-flipbird">Ver codigo y mas videos</a>
-</div>
 
-<p style="margin-top:60px; color:#888;">
-  Portfolio en construccion. Mas proyectos proximamente.
-</p>
+  <div class="proyecto">
+    <h3>Carrito de compra (JavaScript)</h3>
+    <p>
+      Proyecto de practicas centrado en gestion de eventos, delegacion de eventos
+      y calculo dinamico de totales.
+    </p>
+    <a href="https://vicenpuig.github.io/carrito-eventos-JS">Ver demo</a>
+    <a href="https://github.com/vicenpuig/carrito-eventos-JS">Ver codigo</a>
+  </div>
+
+  <div class="proyectos-godot">
+
+    <div class="proyecto">
+      <h3>Sistema de sprites (Godot)</h3>
+      <p>
+        Proyecto de practica centrado en animaciones, sprites y control de estados.
+      </p>
+      <p class="label">Videos de muestra:</p>
+
+      <div class="videos">
+        <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion1.mp4" muted autoplay loop playsinline></video>
+        <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion2.mp4" muted autoplay loop playsinline></video>
+        <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion3.mp4" muted autoplay loop playsinline></video>
+        <video src="https://raw.githubusercontent.com/vicenpuig/godot-pruebas-menu-sprites/main/Videos/Animacion4.mp4" muted autoplay loop playsinline></video>
+      </div>
+
+      <a href="https://github.com/vicenpuig/godot-pruebas-menu-sprites">Ver codigo y mas videos</a>
+    </div>
+
+    <div class="proyecto">
+      <h3>Juego completo Android estilo Flappy Bird</h3>
+      <p>
+        Proyecto de practica centrado en crear un juego funcional exportable a APK.
+      </p>
+      <p class="label">Video de muestra:</p>
+
+      <div class="videos">
+        <video src="https://raw.githubusercontent.com/vicenpuig/celiaticat-godot-flipbird/main/Videos/Gameplay.mp4" muted autoplay loop playsinline></video>
+      </div>
+
+      <a href="https://github.com/vicenpuig/celiaticat-godot-flipbird">Ver codigo y mas videos</a>
+    </div>
+
+  </div>
+
+  <p class="footer">
+    Portfolio en construccion. Mas proyectos proximamente.
+  </p>
+
+</main>
 
 </body>
 </html>
+
 
